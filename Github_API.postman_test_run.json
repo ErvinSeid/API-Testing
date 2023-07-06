@@ -1,0 +1,176 @@
+{
+	"id": "32665f55-0d10-4a0b-9de4-537e4058d929",
+	"name": "Github_API",
+	"timestamp": "2023-07-06T11:36:46.471Z",
+	"collection_id": "21192875-6e867fe8-b025-476d-b9e3-5e36ae8cde72",
+	"folder_id": "21192875-eb835ae0-5075-4c77-92f9-1afac7116f51",
+	"environment_id": "21192875-a15535bd-55b1-4128-a7e1-624c9e5c4df2",
+	"totalPass": 5,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-07-06T11:36:44.537Z",
+	"totalFail": 4,
+	"results": [
+		{
+			"id": "bba7081e-6ed8-4cd7-aaad-16aca80cb3e9",
+			"name": "CraeteNew",
+			"url": "https://api.github.com/user/repos",
+			"time": 196,
+			"responseCode": {
+				"code": 422,
+				"name": "Unprocessable Entity"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				196
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "224305fc-0a9f-45ad-800b-e17e53413ff6",
+			"name": "Check",
+			"url": "https://api.github.com/ErvinSeid/NEW-repo",
+			"time": 141,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				141
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "0c5d95bb-a1b8-468f-961a-a851a4a01a84",
+			"name": "update",
+			"url": "https://api.github.com/repos/ErvinSeid/NEW-repo",
+			"time": 165,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Content-Type is present": true,
+				"Response time is less than 200ms": true,
+				"Status code is 200": false,
+				"Body is correct": false
+			},
+			"testPassFailCounts": {
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Body is correct": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				165
+			],
+			"allTests": [
+				{
+					"Content-Type is present": true,
+					"Response time is less than 200ms": true,
+					"Status code is 200": false,
+					"Body is correct": false
+				}
+			]
+		},
+		{
+			"id": "1f76ff89-4747-42c5-8e4a-6f1bdaac1f34",
+			"name": "delete repo",
+			"url": "https://api.github.com/repos/ErvinSeid/ShopperstackERVIN",
+			"time": 182,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				182
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 684,
+	"collection": {
+		"requests": [
+			{
+				"id": "bba7081e-6ed8-4cd7-aaad-16aca80cb3e9",
+				"method": "POST"
+			},
+			{
+				"id": "224305fc-0a9f-45ad-800b-e17e53413ff6",
+				"method": "GET"
+			},
+			{
+				"id": "0c5d95bb-a1b8-468f-961a-a851a4a01a84",
+				"method": "PATCH"
+			},
+			{
+				"id": "1f76ff89-4747-42c5-8e4a-6f1bdaac1f34",
+				"method": "DELETE"
+			}
+		]
+	}
+}
